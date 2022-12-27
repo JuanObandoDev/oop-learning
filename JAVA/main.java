@@ -4,7 +4,7 @@ class main {
 
         // Create a new instance of the classes
         account acc = new account("Juan", "123456789", "example@example.com", "123456");
-        car car = new car("ABC123", acc.name, 4);
+        car car = new car("ABC123", acc, 4);
         payment pay = new payment();
 
         // Print the information of the classes
