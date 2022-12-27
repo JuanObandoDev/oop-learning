@@ -1,10 +1,10 @@
 public class car {
     public int id;
     public String license;
-    public String driver;
+    public account driver;
     public int passenger;
 
-    public car(String license, String driver, int passenger) {
+    public car(String license, account driver, int passenger) {
         this.license = license;
         this.driver = driver;
         this.passenger = passenger;
@@ -12,6 +12,6 @@ public class car {
 
     @Override
     public String toString() {
-        return ("License: " + license + ", Driver: " + driver + ", Passenger: " + passenger);
+        return ("License: " + license + ", Driver: " + driver.name + ", Passenger: " + passenger);
     }
 }
