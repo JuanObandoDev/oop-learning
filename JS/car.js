@@ -1,8 +1,14 @@
 class car {
-  constructor() {
+  constructor(license, driver, passenger) {
     this.id;
-    this.license;
-    this.driver;
-    this.passenger;
+    this.license = license;
+    this.driver = driver;
+    this.passenger = passenger;
   }
+
+  printDataCar = () => {
+    return `License: ${this.license}, Driver: ${this.driver.name}, Passenger: ${this.passenger}`;
+  };
 }
+
+module.exports = car;
