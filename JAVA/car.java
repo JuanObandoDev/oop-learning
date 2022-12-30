@@ -1,10 +1,10 @@
 public class car {
     public int id;
     public String license;
-    public account driver;
+    public driver driver;
     public int passenger;
 
-    public car(String license, account driver, int passenger) {
+    public car(String license, driver driver, int passenger) {
         this.license = license;
         this.driver = driver;
         this.passenger = passenger;
