@@ -11,7 +11,7 @@ class uberBlack extends car {
     }
 
     public function printDataCar() {
-        return "License: $this->license, Driver: {$this->driver->name}, Passenger: $this->passenger, Type Car Accepted: $this->typeCarAccepted, Seats Material: $this->seatsMaterial";
+        return parent::printDataCar() + ", Type Car Accepted: $this->typeCarAccepted, Seats Material: $this->seatsMaterial";
     }
 }
 ?>

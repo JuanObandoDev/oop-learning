@@ -10,8 +10,17 @@ class uberVan extends car {
         $this->seatsMaterial = $seatsMaterial;
     }
 
+    public function setPassenger($passenger) {
+        if($passenger != 6){            
+            echo "you need to assing 4 passengers";
+            return;
+        } else {
+            $this->passenger = $passenger;
+        }
+    }
+
     public function printDataCar() {
-        return "License: $this->license, Driver: {$this->driver->name}, Passenger: $this->passenger, Type Car Accepted: $this->typeCarAccepted, Seats Material: $this->seatsMaterial";
+        return parent::printDataCar() + ", Type Car Accepted: $this->typeCarAccepted, Seats Material: $this->seatsMaterial";
     }
 }
 ?>

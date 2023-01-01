@@ -11,7 +11,7 @@ class uberPool extends car {
     }
 
     public function printDataCar() {
-        return "License: $this->license, Driver: {$this->driver->name}, Passenger: $this->passenger, Brand: $this->brand, Model: $this->model";
+        return parent::printDataCar() + ", Brand: $this->brand, Model: $this->model";
     }
 }
 ?>
