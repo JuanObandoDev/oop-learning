@@ -10,7 +10,6 @@ public class uberX extends car {
 
     @Override
     public String toString() {
-        return ("License: " + license + ", Driver: " + driver.name + ", Passenger: " + passenger + ", Brand: " + brand
-                + ", Model: " + model);
+        return (super.toString() + ", Brand: " + brand + ", Model: " + model);
     }
 }

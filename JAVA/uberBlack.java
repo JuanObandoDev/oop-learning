@@ -10,4 +10,9 @@ public class uberBlack extends car {
         this.typeCarAccepted = typeCarAccepted;
         this.seatsMaterial = seatsMaterial;
     }
+
+    @Override
+    public String toString() {
+        return (super.toString() + ", Type Car Accepted: " + typeCarAccepted + ", Seats Material: " + seatsMaterial);
+    }
 }
