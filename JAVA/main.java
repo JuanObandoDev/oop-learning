@@ -14,7 +14,7 @@ class main {
         // System.out.println(pay.toString());
 
         // create new driver
-        driver driver = new driver("Juan", "123456789", "example@example.com", "123456", "#ABC123");
+        driver driver = new driver("Juan", "123456789", "example@example.com", "driver123");
         System.out.println(driver.toString());
 
         // create uber cars
@@ -23,5 +23,9 @@ class main {
 
         uberX uberX = new uberX("DEF456", driver, 4, "Chevrolet", "Cruze");
         System.out.println(uberX.toString());
+
+        // create new user
+        user user = new user("Juan", "123456789", "example@example.com", "user123");
+        System.out.println(user.toString());
     }
 }
